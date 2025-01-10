@@ -30,7 +30,7 @@ class DateTimeConstructRule implements \PHPStan\Rules\Rule
 				if ($datetimeArg->left->value == '@') {
 					return [
 						\PHPStan\Rules\RuleErrorBuilder::message(self::ERROR_MESSAGE)
-							->identifier('dateTimeConstruct.timestamp')
+							->identifier('ptsStandard.dateTimeConstruct')
 							->build(),
 					];
 				}
